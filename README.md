@@ -49,3 +49,6 @@ Un cliente API como Postman o Insomnia
 
 git clone https://github.com/jsblandonm/Prueba-tecnica-Proteccion.git
 
+▶️ Levantar la Aplicación
+La API estará disponible en:
+http://localhost:4444
