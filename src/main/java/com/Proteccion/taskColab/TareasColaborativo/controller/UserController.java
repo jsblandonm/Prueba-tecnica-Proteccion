@@ -4,6 +4,7 @@ import com.Proteccion.taskColab.TareasColaborativo.DTO.UserResponseDTO;
 import com.Proteccion.taskColab.TareasColaborativo.service.user.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/users")
+@Tag(name = "User Management", description = "Endpoints para la gestión de usuarios")
 public class UserController {
 
     @Autowired
