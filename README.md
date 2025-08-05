@@ -120,15 +120,6 @@ La consola está disponible mientras la aplicación está corriendo:
 - **Usuario**: `root`
 - **Contraseña**: `1234`
 
-### 👤 Usuarios Predeterminados
-
-La aplicación incluye usuarios de prueba:
-
-| Usuario | Contraseña | Rol |
-|---------|------------|-----|
-| admin   | admin123   | ADMIN |
-| user1   | user123    | USER |
-
 ## 📖 Uso de la API
 
 ### 🔐 Autenticación
