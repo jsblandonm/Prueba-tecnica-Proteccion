@@ -52,3 +52,99 @@ git clone https://github.com/jsblandonm/Prueba-tecnica-Proteccion.git
 ▶️ Levantar la Aplicación
 La API estará disponible en:
 http://localhost:4444
+
+
+La API estará disponible en:
+http://localhost:4444
+
+🗃️ Consola de Base de Datos H2
+Disponible mientras la aplicación está corriendo:
+
+URL: http://localhost:4444/h2-console
+
+JDBC URL: jdbc:h2:mem:db_tareascolaborativo
+
+Usuario: root
+
+Contraseña: 1234
+
+📖 Guía de la API
+⚠️ Para acceder a los endpoints protegidos, primero debes registrarte o iniciar sesión para obtener un token JWT.
+Luego inclúyelo en tus peticiones como:
+Authorization: Bearer <token>
+
+🔑 Autenticación
+Registrar un Nuevo Usuario
+Endpoint: POST /auth/register
+
+Body:
+
+{
+  "username": "nuevo_usuario",
+  "password": "una_contraseña_segura"
+}
+
+Respuesta: Token JWT
+
+Iniciar Sesión
+Endpoint: POST /auth/login
+
+Body:
+
+{
+  "username": "usuario_existente",
+  "password": "su_contraseña"
+}
+
+Respuesta: Token JWT
+
+👤 Usuarios (Protegido)
+Obtener Todos los Usuarios
+Endpoint: GET /api/users
+
+Respuesta: Lista de usuarios registrados
+
+Obtener Usuario por ID
+Endpoint: GET /api/users/{id}
+
+Respuesta: Detalles del usuario
+
+✅ Tareas (Protegido)
+Obtener Tareas del Usuario
+Endpoint: GET /api/tasks
+
+Descripción:
+
+ADMIN: ve todas las tareas
+
+USER: ve solo sus tareas asignadas
+
+Respuesta: Lista de tareas
+
+Crear una Nueva Tarea
+Endpoint: POST /api/tasks
+
+Body:
+
+{
+  "title": "Primera tarea para la demo",
+  "description": "tarea de ejemplo",
+  "status": "PENDING",
+  "createdAt": "2025-08-05T14:30:00",
+  "assignedToId": 2
+}
+
+
+Respuesta: Tarea creada
+
+Actualizar una Tarea
+Endpoint: PUT /api/tasks/{id}
+
+Body: Igual al de creación
+
+Respuesta: Tarea actualizada
+
+Eliminar una Tarea
+Endpoint: DELETE /api/tasks/{id}
+
+Respuesta: 200 OK si la eliminación fue exitosa
