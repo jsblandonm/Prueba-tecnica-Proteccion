@@ -54,8 +54,11 @@ La API estará disponible en:
 http://localhost:4444
 
 
+
 La API estará disponible en:
 http://localhost:4444
+
+Documentación de la API: http://localhost:4444/swagger-ui.html
 
 🗃️ Consola de Base de Datos H2
 Disponible mientras la aplicación está corriendo:
