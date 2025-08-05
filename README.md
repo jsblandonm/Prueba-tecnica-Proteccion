@@ -46,3 +46,6 @@ Un cliente API como Postman o Insomnia
 (Opcional) Un IDE como IntelliJ IDEA o VS Code
 
 📥 Clonar el Repositorio
+
+git clone https://github.com/jsblandonm/Prueba-tecnica-Proteccion.git
+
